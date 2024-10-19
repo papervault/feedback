@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted</title>
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-container {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tick-mark {
+            font-size: 80px;
+            color: #28a745;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .email-notice {
+            font-size: 16px;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Success Icon and Message -->
+    <div class="success-container">
+        <div class="tick-mark">&#10004;</div> <!-- Unicode for the tick -->
+        <h1>Feedback Submitted Successfully!</h1>
+        <p>Thank you for your feedback.</p>
+        <p class="email-notice">
+            If your feedback is related to an issue or support, you'll receive a reply soon via the email address you submitted.
+        </p>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Audio for Success Page -->
+    <audio id="successSound" autoplay>
+        <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- JavaScript for Redirection -->
+    <script>
+        function goBack() {
+            window.location.href = "https://papervault.github.io/main/";
+        }
+    </script>
+</body>
+</html>
